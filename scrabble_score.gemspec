@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = ScrabbleScore::VERSION
   spec.authors       = ['Nick Aschenbach']
   spec.email         = ['nick.aschenbach@gmail.com']
-  spec.summary       = %q{A scrabble scoring engine}
-  spec.description   = %q{An engine that finds words and calculates the scrabble score}
-  spec.homepage      = ''
+  spec.summary       = %q{A scrabble cheater scoring library}
+  spec.description   = %q{An engine that finds words from a set of letters and calculates the scrabble score}
+  spec.homepage      = 'https://github.com/nick-aschenbach/scrabble-score'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -19,6 +19,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 1.6'
-  spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'rspec', '3.0.0'
+  spec.add_development_dependency 'simplecov', '0.9.1'
 end

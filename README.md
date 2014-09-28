@@ -29,10 +29,13 @@ Or install it yourself as:
 
 ## Usage
 
-One can search for words in the dictionary without score via:
+One can search for words in the dictionary without score estimates via the following Ruby script:
 
 ```
-ScrabbleScore::WordFinder.new.search('foobar')
+require 'scrabble_score'
+
+finder = ScrabbleScore::WordFinder.new
+p finder.search('foobar')
 ```
 
 While the WordFinder uses the SOWPODS dictionary, it's possible to replace it with your own:
@@ -57,6 +60,8 @@ letters.permutations # returns ["xy", "xz", "yx", "yz", "zx", "zy", "xyz", "xzy"
 ```
 
 Note that this will only show permutations from two letters up to the size of the input string.
+
+
 
 ## Contributing
 
