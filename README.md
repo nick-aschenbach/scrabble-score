@@ -13,6 +13,22 @@ Which returns:
 {"qi"=>11, "za"=>11, "ai"=>2, "qua"=>12, "quiz"=>22, "quai"=>13}
 ```
 
+Also, there is a command line interface:
+
+```
+> scrabble_score dafs
+fads, 8
+fad, 7
+fas, 6
+fa, 5
+sad, 4
+das, 4
+ads, 4
+da, 3
+ad, 3
+as, 2
+```
+
 ## Installation
 
 Add this line to your application's Gemfile:

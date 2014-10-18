@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'scrabble_score'
+
+begin
+  word = ARGV[0]
+  scorer = ScrabbleScore::WordFinder.new
+  words_n_scores = scorer.search_with_score(word).to_a
+  words_n_scores.sort! do |a, b|
+    b[1] <=> a[1] # by score
+  end
+  words_n_scores.each do |word, score|
+    puts "#{word}, #{score}"
+  end
+rescue
+  puts "Usage: scrabble_score [letters]"
+end
